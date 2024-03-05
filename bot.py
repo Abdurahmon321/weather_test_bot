@@ -91,7 +91,7 @@ def start_bot_polling():
                 res = weather(message.text)
                 bot.send_message(message.chat.id, res)
             except:
-                bot.send_message(message.chat.id, res)
+                bot.send_message(message.chat.id, f" {message.text} Bunday shahar topoilmadi")
 
     bot.infinity_polling()
 
